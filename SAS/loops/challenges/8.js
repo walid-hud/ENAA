@@ -1,3 +1,5 @@
+// almost completed but the pyramid isn't asymmetric 🤔//
+
 import { log } from "console"
 function asciiPyramid(){
     let primeNumbersArray = [1]
@@ -9,20 +11,18 @@ function asciiPyramid(){
         }
     }
 
-    log(primeNumbersArray)
     let spaces= 10
     for(let i = 0 ; i < primeNumbersArray.length ; i++){
         let line= " "
         
         for(let i = 0; i < spaces ; i++){
             line+=" "
-            spaces
         }
         for(let j = 0; j< primeNumbersArray[i] ; j++){
             line+="*"
-            // spaces = (primeNumbersArray[i] - primeNumbersArray[i+1]) * -1 /2
         }
-        console.log(line)
+        spaces--
+        log(line)
         
     }
 }

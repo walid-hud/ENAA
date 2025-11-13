@@ -1,6 +1,6 @@
+// completed ✅ //
+
 import { log } from "console";
-
-
 let exampleArr = [10 , 20 , 30 , 1 , 101]
 function sum_max(numbers = []){
     let sum = 0;

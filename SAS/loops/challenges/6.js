@@ -1,13 +1,16 @@
+// completed ✅ //
+
 import { log } from "console";
-import rl from "./shared";
 
 
-rl.question("number : " ,(num)=>printExponent(parseInt(num)))
-
-
-function printExponent(num){
-
-
+function toExponent(num, exponent) {
+  let result = 1;
+  let count = 0;
+  while (count < exponent) {
+    result = result * num;
+    count = count + 1;
+  }
+  log(result)
 }
 
-if(a !== b ){}
+toExponent(2 , 3) // 8

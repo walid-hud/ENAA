@@ -1,5 +1,6 @@
-import { log } from "console"
+// completed ✅ //
 
+import { log } from "console"
 let exampleNumbers = [1 , 2 , 3 , -1 , -2]
 function sumNonNegative(numbers = []){
     let sum = 0
