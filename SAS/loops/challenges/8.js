@@ -11,8 +11,18 @@ function asciiPyramid(){
         }
     }
 
+    let maxNumberOfStars = primeNumbersArray[primeNumbersArray.length-1] 
+
     for(let i = 0 ; i < primeNumbersArray.length ; i++){
-        let spaces = (primeNumbersArray[primeNumbersArray.length-1] - primeNumbersArray[i]) /2
+        /*
+        Calculates the space need for the pyramid to be asymmetric by
+        subtracting the number of stars in the current line from the maximum 
+        number of stars (which defines the width of the pyramid) and then dividing it by 2 
+        so that the stars are pushed by half the space.
+        if the space isn't divided, the stars will be pushed by all the spaces!
+        */
+        let spaces = (maxNumberOfStars - primeNumbersArray[i]) / 2
+
         let line= ""
         
         for(let i = 0; i < spaces ; i++){
