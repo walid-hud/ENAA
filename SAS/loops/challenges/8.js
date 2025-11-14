@@ -11,7 +11,7 @@ function asciiPyramid(){
         }
     }
 
-    let maxNumberOfStars = primeNumbersArray[primeNumbersArray.length-1] 
+    let maxNumberOfStars = primeNumbersArray.at(-1)
 
     for(let i = 0 ; i < primeNumbersArray.length ; i++){
         /*
@@ -34,6 +34,7 @@ function asciiPyramid(){
         log(line)
         
     }
+    
 }
 
 asciiPyramid()

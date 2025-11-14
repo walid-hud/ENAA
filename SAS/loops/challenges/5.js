@@ -4,7 +4,7 @@ import { log } from "console";
 import rl from "./shared.js";
 
 
-function printPrimenumbers(input) {
+function printPrimeNumbers(input) {
     const n = parseInt(input);
     for (let i = 2; i <= n; i++) {
         let isPrime = true;
@@ -21,5 +21,5 @@ function printPrimenumbers(input) {
     rl.close();
 }
 
-rl.question("number : " ,(num)=>printPrimenumbers(num) )
+rl.question("number : " ,(num)=>printPrimeNumbers(num) )
 
